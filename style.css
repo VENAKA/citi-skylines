@@ -20,11 +20,11 @@ body{
     align-items: center;
     padding-left: 150px;
     backdrop-filter: blur(5px);
-    z-index: 100;
     position: fixed;
-    top: 0;
+    z-index: 100;
+    top:0;
 }
-.header__logo{
+.header__logo img{
     transition: 0.6s;
 }
 .header__nav {
@@ -61,9 +61,10 @@ body{
 .contact:hover{
     color: rgb(249, 255, 87);
 }
-.header__logo:hover{
+.header__logo img:hover{
     transform: rotate(360deg);
 }
+
 /* header-end */
 .mein {
 }
@@ -99,4 +100,26 @@ body{
 }
 .remember {
     display: flex;
+}
+@media(max-width:765px){
+    .home{
+        font-size: 33px;
+    }
+    .login{
+        font-size:33px ;
+    }
+    .contact{
+        font-size: 33px;
+    }
+    .header__logo{
+        display: none;
+    }
+    .header__nav{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }

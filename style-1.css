@@ -10,6 +10,7 @@ body{
     background-image: url(./img/33749798.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 /* header-starn */
 .header {
@@ -24,7 +25,7 @@ body{
     z-index: 100;
     top:0;
 }
-.header__logo{
+.header__logo img{
     transition: 0.6s;
 }
 .header__nav {
@@ -61,20 +62,19 @@ body{
 .contact:hover{
     color: rgb(249, 255, 87);
 }
-.header__logo:hover{
+.header__logo img:hover{
     transform: rotate(360deg);
 }
+
 /* header-end */
-.mein {
-}
 .mein__conteiner {
-    width: 90%;
+    max-width: 90%;
     height: 100%;
     margin: 150px auto;
 }
 .mein__conteiner-photo {
-    width: 100%;
-    height: 500px;
+    max-width: 100%;
+    height: 600pxpx;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,16 +125,14 @@ body{
         transform: translateX(-70000px) translateY(-70000px);
     }
 }
-.mein__conteiner-first-info-1 {
+.info {
     width: 100%;
     margin: 50px auto;
-    height: 200px;
     display: flex;
     justify-content: space-between;
 }
 .info-blok-1 {
     width: 65%;
-    height: 200px;
     border: 5px solid #4d2525;
     border-radius: 20px;
     padding: 5px;
@@ -143,7 +141,6 @@ body{
 }
 .info-blok-2 {
     width: 25%;
-    height: 200px;
     border: 5px solid #4d2525;
     border-radius: 20px;
     padding: 5px;
@@ -172,11 +169,137 @@ body{
 .audio {
     margin-left: 70px;
 }
-.fa-solid {
+.burger {
+    display: none;
+    width: 80px;
+    height: 80px;
 }
-.fa-music {
+@media(max-width:765px){
+    .home{
+        font-size: 33px;
+    }
+    .login{
+        font-size:33px ;
+    }
+    .contact{
+        font-size: 33px;
+    }
+    .header__logo{
+        display: none;
+    }
+    .header__nav{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .mein__conteiner-photo{
+        flex-direction: column;
+    }
+    .info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-blok-1{
+        margin-bottom: 30px;
+    }
+    .info-blok-2 {
+        width: 65%;
+    }
+    .photo_1{
+        width: 380px;
+        height: 380px;
+        margin-bottom: 20px;
+        animation: photo-1 cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+    }
+    @keyframes photo-1 {
+        0%{
+            transform: translateY(-300px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    .photo_2{
+        width: 380px;
+        height: 380px;
+        margin-bottom: 20px;
+        animation: photo-2 cubic-bezier(0.075, 0.82, 0.165, 1) 4s;
+    }
+    @keyframes photo-2 {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .photo_3{
+        width: 380px;
+        height: 380px;
+        margin-bottom: 20px;
+        animation: photo-3 cubic-bezier(0.075, 0.82, 0.165, 1) 2.3s;
+    }
+    @keyframes photo-3 {
+        0%{
+            transform: translateY(300px);
+        }
+        
+    }
 }
-.audio {
+@media(max-width:575px){
+    .header__nav {
+        display: none;
+    }
+    .header__logo{
+        display: block;
+    }
+    .burger{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .burger__line{
+        position: relative;
+    }
+    .burger__line {
+        content: '';
+        width: 80px;
+        height: 6px;
+        background-color: black;
+        position: absolute;
+    }
+    .burger__line::before {
+        content: '';
+        width: 80px;
+        height: 6px;
+        background-color: black;
+        position: absolute;
+        top: 15px;
+    }
+    .burger__line::after {
+        content: '';
+        width: 80px;
+        height: 6px;
+        background-color: black;
+        position: absolute;
+        bottom: 15px;
+    }
+    .info-blok-2 {
+        width: 65%;
+    }
+    .photo_1{
+        width: 270px;
+    }
+    .photo_2{
+        width: 270px;
+    }
+    .photo_3{
+        width: 270px;
+    }
 }
-.muzika {
-}
+
+
