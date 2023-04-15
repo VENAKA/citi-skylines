@@ -64,9 +64,9 @@ body{
 .header__logo img:hover{
     transform: rotate(360deg);
 }
-
 /* header-end */
-.mein {
+.burger {
+    display: none;
 }
 .mein__conteiner {
     width: 350px;
@@ -121,5 +121,45 @@ body{
     .header{
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+@media(max-width:575px){
+    .header__nav {
+        display: none;
+    }
+    .header__logo{
+        display: block;
+    }
+    .burger{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .burger__line{
+        position: relative;
+    }
+    .burger__line {
+        content: '';
+        width: 80px;
+        height: 6px;
+        background-color: black;
+        position: absolute;
+    }
+    .burger__line::before {
+        content: '';
+        width: 80px;
+        height: 6px;
+        background-color: black;
+        position: absolute;
+        top: 15px;
+    }
+    .burger__line::after {
+        content: '';
+        width: 80px;
+        height: 6px;
+        background-color: black;
+        position: absolute;
+        bottom: 15px;
     }
 }
