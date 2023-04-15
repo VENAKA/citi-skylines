@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./img/33749798.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* header-starn */
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 150px;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 100;
+    top:0;
+}
+.header__logo{
+    transition: 0.6s;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 100px;
+    align-items: center;
+}
+.home {
+    text-decoration: none;
+    font-size: 25px;
+    color: aliceblue;
+    transition: 0.5s;
+}
+.login {
+    text-decoration: none;
+    font-size: 25px;
+    color: aliceblue;
+    transition: 0.5s;
+}
+.contact {
+    text-decoration: none;
+    font-size: 25px;
+    color: aliceblue;
+    transition: 0.5s;
+}
+.home:hover{
+    color: rgb(249, 255, 87);
+}
+.login:hover{
+    color: rgb(249, 255, 87);
+}
+.contact:hover{
+    color: rgb(249, 255, 87);
+}
+.header__logo:hover{
+    transform: rotate(360deg);
+}
+/* header-end */
+.mein {
+}
+.mein__conteiner {
+    width: 90%;
+    height: 100%;
+    margin: 150px auto;
+}
+.mein__conteiner-photo {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photo_1 {
+    width: 400px;
+    height: 400px;
+    border: 10px solid #ffffff;
+    background-image: url(./img/Mrj4vOb.0.jpg);
+    background-size: cover;
+    animation: photo-1 cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+@keyframes photo-1{
+    0%{
+        display: none;
+        transform: translateY(-700px) translateX(700px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.photo_2 {
+    width: 350px;
+    height: 500px;
+    border: 10px solid #ffffff;
+    background-image: url(./img/ss_e22dca31194575069bc7c3b178d4909c0005efa3.1920x1080.jpg);
+    background-size: cover;
+    animation: photo-2 cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+@keyframes photo-2{
+    0%{
+        transform: translateY(-10000px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.photo_3 {
+    width: 500px;
+    height: 300px;
+    border: 10px solid #ffffff;
+    background-image: url(./img/cities-skylines-seattle-6.jpg);
+    background-size: cover;
+    animation: photo-3 cubic-bezier(0.075, 0.82, 0.165, 1) 2.3s;
+}
+@keyframes photo-3{
+    0%{
+        transform: translateX(-70000px) translateY(-70000px);
+    }
+}
+.mein__conteiner-first-info-1 {
+    width: 100%;
+    margin: 50px auto;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.info-blok-1 {
+    width: 65%;
+    height: 200px;
+    border: 5px solid #4d2525;
+    border-radius: 20px;
+    padding: 5px;
+    color: #dfd9d9;
+    background-color: rgba(53, 153, 153, 0.44);
+}
+.info-blok-2 {
+    width: 25%;
+    height: 200px;
+    border: 5px solid #4d2525;
+    border-radius: 20px;
+    padding: 5px;
+    color: #dfd9d9;
+    background-color: rgba(53, 153, 153, 0.44);
+}
+.mysik__bar {
+    width: 70px;
+    height: 120px;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    left: 0;
+    top: 300px;
+    overflow: hidden;
+    transition: 1s;
+    border-radius: 0 70px 70px 0;
+    position: absolute;
+    position: fixed;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.mysik__bar:hover{
+    width: 420px;
+}
+.audio {
+    margin-left: 70px;
+}
+.fa-solid {
+}
+.fa-music {
+}
+.audio {
+}
+.muzika {
+}
